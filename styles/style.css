@@ -6,10 +6,17 @@
 /*---------------- 
   Common Styles
 ---------------- */
+header{
+    background-color: mediumseagreen;
+
+}
 .nav-bar{
     display: flex;
     list-style: none;
     justify-content: space-around;
+    margin: 0;
+    height: 70px;
+    align-items: center;
 }
 .navbar-wrapper{
     margin: 0px 30px;
@@ -23,6 +30,7 @@ body{
 }
 .top-banner:hover {
     background-image: linear-gradient(to left, green, rgba(180, 180, 16, 0.781), green);
+    s
 }
 
 .top-banner{
@@ -49,6 +57,11 @@ height: 350px;
 margin-top: 153px;
 margin-right: 140px;
 margin-bottom: 86px;
+transition: width 3s ease 1s, height 3s;
+}
+.right-half img:hover{
+    width:600px;
+    height: 450px;
 }
 .watch-live{
     font-size: .7em;
@@ -58,11 +71,14 @@ margin-bottom: 86px;
     border-radius: 15px;
     padding: 15px;
     box-shadow: 5px 5px 15px goldenrod;
+    transition: width 5s;
 
 }
 .watch-live:hover{
+
     background-color:crimson;
     box-shadow: 5px 5px 15px darkslategray;
+    width: 400px;
 }
 /* ------------------
 Players Section
@@ -80,6 +96,7 @@ Players Section
     display: grid ;
     margin: 20px 140px;
     margin-bottom: 0;
+    margin-top: 0;
     place-items: center;
     padding-top: 40px;
     padding-bottom: 50px;
